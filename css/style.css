@@ -1,0 +1,195 @@
+:root{
+--light-pink: rgb(247, 202, 210);
+--pink-bg: rgb(246, 214, 219);
+--bg-color:floralwhite;
+}
+
+body{
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header{
+  overflow: auto;
+  background-color:floralwhite;
+}
+.pink-bg{
+  background-color: rgb(241, 216, 220) !important;
+}
+.bg-color{
+  background-color: var(--bg-color) !important;
+}
+.title{
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title h1{
+  font-size: 60px;
+  margin: 0;
+  color: var(--light-pink);
+  letter-spacing: 1px;
+  text-shadow: 5px 3px 1px palevioletred;
+}
+.move{
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: rotate(-5deg);
+}
+.bow{
+  position: absolute;
+  top: -80%;
+  left: -45%;
+  transform: rotate(-25deg);
+}
+.sentance div{
+  display: inline-block;
+  text-shadow: 2px 2px 1px palevioletred ;
+  letter-spacing: 1px; 
+}
+
+.sentance{
+  position: absolute;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);  
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+    transform: rotate(-5deg);
+  }
+}
+
+.Bookmark, .your, .favorite, .sites {
+  padding-left: 8px;
+  opacity: 0; 
+  transform: translateY(50%); 
+  animation-name: appear; 
+  animation-duration: 1s; 
+  animation-fill-mode: forwards; 
+}
+
+
+.Bookmark {
+  animation-delay: 1s; 
+}
+.your {
+  animation-delay: 2s;
+}
+.favorite {
+  animation-delay: 3s;
+}
+.sites {
+  animation-delay: 4s;
+}
+
+.barbie{
+  position: absolute;
+  opacity: 0;
+  width: 10%;
+  left: 90%;
+  animation-name: barbie; 
+  animation-duration: 2s; 
+  animation-delay: 5s;
+  animation-fill-mode: forwards; 
+
+}
+
+@keyframes barbie{
+  0% {
+    opacity: 0;
+    left: 90%;  
+  }
+  100% {
+    opacity: 1;
+    left: 80%;
+    transform: rotate(5deg);
+  }
+}
+.content{
+  background-color: #f3f4f5;
+}
+label , h5{
+  color: black;
+  font-size: 25px;
+ text-shadow: 2px 3px 1px var(--light-pink) !important;
+ padding: 5px;
+}
+
+
+.submit {
+  padding: 10px 30px;
+  border: none;
+  background-color: var(--light-pink);
+  color: floralwhite;
+  border: 1px solid var(--light-pink);
+  border-radius: 20px;
+  font-size: larger !important;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.submit:hover{
+  color: var(--light-pink);
+  background-color: floralwhite;
+  border: 1px solid var(--light-pink);
+}
+
+#inner-container h5{
+  color: palevioletred;
+  font-size: 20px;
+  background-color: floralwhite;
+  text-shadow: 2px 2px 1px var(--light-pink) !important;
+  box-shadow: 5px 5px 1px var(--light-pink) !important;
+}
+
+#visit{
+  padding: 5px 40px;
+  border: none;
+  background-color: palevioletred;
+  color: floralwhite;
+  border: 1px solid floralwhite;
+  border-radius: 30px;
+  font-size: 25px !important;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+#visit:hover{
+  padding: 5px 40px;
+  border: none;
+  background-color: floralwhite;
+  color: palevioletred;
+  border: 1px solid palevioletred;
+  border-radius: 30px;
+  font-size: 25px !important;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+#delete{
+  padding: 5px 40px;
+  border: none;
+  background-color: darkred;
+  color: floralwhite;
+  border: 1px solid floralwhite;
+  border-radius: 30px;
+  font-size: 25px !important;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+#delete:hover{
+  padding: 5px 40px;
+  border: none;
+  background-color: floralwhite;
+  color: darkred;
+  border: 1px solid darkred;
+  border-radius: 30px;
+  font-size: 25px !important;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
